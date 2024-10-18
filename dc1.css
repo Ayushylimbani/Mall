@@ -1,0 +1,153 @@
+/* General Reset and Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.left-nav {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.center-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.center-nav a {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+}
+
+/* Hover Effect for Navigation Links */
+.center-nav a:hover {
+    color: #e63946; /* Change text color on hover */
+    border-bottom: 2px solid #e63946; /* Add a border bottom on hover */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    align-items: center;
+
+/*.right-nav a {
+    font-weight: 500;
+    margin-left: 15px;
+    padding: 10px;
+
+    /* Right Navigation Styles */
+.right-nav a {
+    font-weight: 500;
+    margin-left: 15px;
+    padding: 10px;
+    color: #000;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Right Navigation Links */
+.right-nav a:hover {
+    color: #e63946; /* Change text color on hover */
+    background-color: #f5f5f5; /* Light background color on hover */
+    border-radius: 20px; /* Rounded corners for the hover effect */
+    padding: 10px 15px; /* Slight padding adjustment for visual effect */
+}
+
+}
+
+/* Sub Navigation Styles */
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #000;
+    padding: 10px;
+}
+
+.sub-nav a {
+    color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Sub Navigation */
+.sub-nav a:hover {
+    background-color: #e63946;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+
+    position: relative;
+    background-image: url('hero.png'); /* Add your own image here */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #000;
+}
+.title-down{
+    color: #000;
+
+}
+
+.learn-more {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #c22f35;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-nav ul {
+        flex-direction: column;
+    }
+    .sub-nav {
+        flex-direction: column;
+    }
+}
